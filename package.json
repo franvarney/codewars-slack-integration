@@ -1,0 +1,24 @@
+{
+  "name": "codewars-slack-integration",
+  "version": "0.0.0",
+  "description": "A codewars slack integration.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franvarney/codewars-slack-integration.git"
+  },
+  "keywords": [
+    "codewars",
+    "slack",
+    "integration"
+  ],
+  "author": "Fran Varney <fran.varn@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/franvarney/codewars-slack-integration/issues"
+  },
+  "homepage": "https://github.com/franvarney/codewars-slack-integration#readme"
+}

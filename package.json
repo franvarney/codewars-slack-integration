@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/franvarney/codewars-slack-integration/issues"
   },
-  "homepage": "https://github.com/franvarney/codewars-slack-integration#readme"
+  "homepage": "https://github.com/franvarney/codewars-slack-integration#readme",
+  "dependencies": {
+    "hapi": "13.0.0"
+  }
 }

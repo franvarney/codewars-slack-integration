@@ -24,6 +24,7 @@
   "homepage": "https://github.com/franvarney/codewars-slack-integration#readme",
   "dependencies": {
     "@modulus/logger": "1.2.0",
-    "hapi": "13.0.0"
+    "hapi": "13.0.0",
+    "mongoose": "4.4.6"
   }
 }

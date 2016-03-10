@@ -27,6 +27,18 @@ class User extends Base {
   }
 
   /*
+   * Get a user's token.
+   * @param {object} query - An object with properties to search by.
+   * @return {boolean} The user token.
+  */
+  getToken(query, done) {
+    this._get(query, (err, user) => {
+      if (err) return done(err)
+      done(null, user.token)
+    })
+  }
+
+  /*
    * Set a user's token.
    * @param {object} data - The payload sent from Slack.
    * @return {object} An instance of UserModel.

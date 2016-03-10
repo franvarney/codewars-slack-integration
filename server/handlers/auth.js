@@ -1,9 +1,11 @@
+const Logger = require('@modulus/logger')('server:handlers:auth')
+
 const Config = require('../../config')
 
 exports.validate = function (request, reply) {
   if (!request.payload.token || request.payload !== Config.slack.token) {
     Logger.error(`auth.validate: ${err.message}`)
-    return reply('Cannot be validated. Check your token.');
+    return reply('Cannot be validated. Check your Slack token config.')
   }
 
   return reply.continue({

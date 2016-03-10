@@ -4,6 +4,7 @@ const Mongoose = require('mongoose')
 
 const Auth = require('./handlers/auth')
 const Config = require('../config')
+const Routes = require('./routes')
 
 var server = new Hapi.Server()
 
@@ -35,6 +36,8 @@ server.start((err) => {
   }
 
   Logger.info(`Server starting at ${server.info.uri}`)
+
+  server.route(Routes)
 })
 
 module.exports = server

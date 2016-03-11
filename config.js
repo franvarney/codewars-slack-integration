@@ -1,7 +1,8 @@
 module.exports = {
   codewars: {
     language: process.env.CODEWARS_LANGUAGE || 'javascript',
-    token: process.env.CODEWARS_TOKEN || undefined,
+    submissions: process.env.CODEWARS_SUBMISSIONS || false,
+    token: process.env.CODEWARS_TOKEN || undefined
   },
   host: process.env.HOST || 'localhost',
   mongo: {

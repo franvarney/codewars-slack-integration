@@ -34,7 +34,7 @@ class User extends Base {
   getToken(query, done) {
     this._get(query, (err, user) => {
       if (err) return done(err)
-      done(null, user.token)
+      done(null, user ? user.token : undefined)
     })
   }
 

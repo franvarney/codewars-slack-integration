@@ -14,7 +14,6 @@ class Bot {
    * @return {boolean} body - The question from codewars.com.
   */
   getQuestion(data, done) {
-    console.log(data)
     var query = {
       'team.name': data.team_domain,
       'user.name': data.user_name
